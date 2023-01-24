@@ -7,7 +7,7 @@ type Params = {
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
   const paths: { params: Params }[] = [];
 
-  for (let index = 0; index < 1000; index++) {
+  for (let index = 0; index < 50000; index++) {
     paths.push({
       params: {
         key: String(index),
